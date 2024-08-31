@@ -1,7 +1,11 @@
 package de.ricardo;
 
+import org.w3c.dom.ls.LSOutput;
+
 public class Main {
     public static void main(String[] args) {
+
+
         System.out.println("Hello world!");
 
         //example of declaring a variable
@@ -37,6 +41,55 @@ public class Main {
         boolean logicalNot = !(x > y);
         System.out.println(logicalNot);
 
+        //If Else
 
+        int age2 = 25;
+
+        if (age2 >= 18) {
+            System.out.println("I'm 18");
+        } else {
+            System.out.println("I'm not 18");
+        }
+
+        int score = 90;
+
+        if (score >= 90) {
+            System.out.println("Sehr gut");
+        } else if (score >= 80) {
+            System.out.println("Gut gemacht!");
+        } else if (score >= 70) {
+            System.out.println("Nicht schlecht.");
+        } else {
+            System.out.println("Mehr Übung nötig");
+        }
+
+        int result = addNumbers(10, 20);
+        System.out.println("Ergebnis: " + result);
+
+        greetUser("Max");
+        System.out.println(isEven(22));
     }
+
+
+    public static int addNumbers(int a, int b) {
+        int sum2 = a + b;
+        return sum2;
+    }
+
+    public static int multiply(int x, int y) {
+        return x * y;
+    }
+
+    public static void greetUser(String name2) {
+        System.out.println("Hallo, " + name2 + "!");
+    }
+
+    public static boolean isEven(int number) {
+        if (number % 2 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }
